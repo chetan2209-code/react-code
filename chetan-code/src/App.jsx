@@ -8,6 +8,6 @@ const App = () => {
       <h3>give up! </h3>
     </div>
   )
-}
+}  
 
 export default App
