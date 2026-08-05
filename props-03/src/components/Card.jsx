@@ -1,17 +1,35 @@
 import React from 'react'
 
-const Card = (props) => {
+const card = (props) => {
+  console.log(props)
   return (
-    console.log(props),
+    
     <div>
-         <div className="card">
-        <img src={props.img} alt="profile" />
-        <h1>{props.user}</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button>View Profile</button>
+      <div className="card">
+      <div>
+                  <div className="top">
+          <img src={props.logo} alt="" />
+          <button>Save</button>
+        </div>
+        <div className="center">
+          <h3>{props.Company} <span>{props.datePosted}</span></h3>
+          <h2>{props.post}</h2>
+        <div className="tag">
+        <h4>{props.tag1}</h4>
+        <h4>{props.tag2}</h4>
+        </div>
       </div>
+      </div>
+      <div className="bottom">
+        <div>
+            <h3>{props.pay}</h3>
+            <p>{props.location}</p>
+          <button>Apply Now</button>
+        </div>
+    </div>
+  </div>
     </div>
   )
 }
 
-export default Card
+export default card
