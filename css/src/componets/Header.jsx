@@ -1,12 +1,13 @@
 import React from 'react'
+import '../style/Header.css'
 
-const header = () => {
+const Header = () => {
   return (
     <div className='header'>
         This is button
-        <button></button>
+        <Button />
     </div>
   )
 }
 
-export default header
+export default Header
